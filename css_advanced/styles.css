@@ -395,3 +395,96 @@ nav{
     justify-content: center;
     align-items: center;
 }
+
+
+@media (max-width: 768px) {
+    .banner, .intro, .pros, .weather, .tutorials, .membership, .FAQ {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 80px;
+    }
+
+    #register h1 {
+        font-size: 60px;
+    }
+
+    .moto span {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    button {
+        width: 150px;
+        height: 36px;
+    }
+
+    .vidcontainer {
+        flex-direction: column;
+    }
+    
+    .vids {
+        margin-bottom: 30px;
+    }
+
+    .pros h2 {
+        font-size: 24px;
+    }
+
+    .pros > div {
+        flex-direction: column;
+    }
+
+    .pro1 {
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #register h1 {
+        font-size: 40px;
+    }
+
+    .moto span {
+        font-size: 16px;
+    }
+
+    button {
+        width: 120px;
+        height: 30px;
+    }
+
+    .pro1 img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pro1 h3 {
+        font-size: 14px;
+    }
+
+    .weather {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .membercontainer div {
+        width: 90%;
+    }
+
+    .FAQ h2 {
+        font-size: 40px;
+    }
+
+    .footerlogo img {
+        width: 80px;
+    }
+}
