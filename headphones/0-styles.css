@@ -143,6 +143,16 @@ button:hover,input[type="submit"]:hover{
     font-size: 100px;
 }
 
+.icons .pb p:first-of-type{
+    transition: transform 0.6s ease, opacity 0.3s ease;
+    animation: bounce 3s infinite;
+}
+
+.icons .pb p:first-of-type:hover {
+    transform: scale(1.1) rotate(10deg); 
+    opacity: 0.9;
+}
+
 .mel{
     font-size: 1.125em;
     line-height: 26px;
@@ -186,6 +196,13 @@ button:hover,input[type="submit"]:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.penta div:hover {
+    transform: rotate(370deg);
+    opacity: 0.85;
 }
 
 .contact{
