@@ -175,9 +175,11 @@ button:hover,input[type="submit"]:hover{
 }
 
 .penta div {
-    margin:40px;
-    width: 200px;
-    height: 200px;
+    margin:20px;
+    width: 30vw;
+    height: 30vh;
+    max-width: 200px;
+    max-height: 200px;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     background-color: #FF6565;
     display: flex;
@@ -329,11 +331,6 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .penta div {
-        width: 100%;
-        margin: 10px 0;
     }
 
 
