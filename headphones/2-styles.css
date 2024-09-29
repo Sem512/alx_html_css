@@ -101,6 +101,104 @@ button:hover,input[type="submit"]:hover{
     text-align: center;
 }
 
+.what-we-do{
+    display: flex;
+    padding:100px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-text{
+    display: flex;
+    width: 637px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons div{
+    display: flex;
+    width: 207px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pb p{
+    margin: 5px;
+    padding: 5px;
+}
+
+.pb p:first-of-type{
+    color:rgb(255, 101, 101);
+    font-size: 100px;
+}
+
+.icons .pb p:first-of-type{
+    transition: transform 0.6s ease, opacity 0.3s ease;
+    animation: bounce 3s infinite;
+}
+
+.icons .pb p:first-of-type:hover {
+    transform: scale(1.1) rotate(10deg); 
+    opacity: 0.9;
+}
+
+.mel{
+    font-size: 1.125em;
+    line-height: 26px;
+    font-weight:bold;
+}
+
+.des{
+    font-size: 0.875em;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+
+.results{
+    color: white;
+    background-image: url(images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.penta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.penta div {
+    margin:20px;
+    width: 30vw;
+    height: 30vh;
+    max-width: 200px;
+    max-height: 200px;
+    background-image: url(images/pentagone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media(min-width:768px){
     header{
         width:100%;
@@ -116,6 +214,29 @@ button:hover,input[type="submit"]:hover{
     }
 }
 
+@media (max-width: 768px){
+    .penta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .penta div {
+        width: 45%; 
+        margin: 10px;
+    }
+
+    .icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icons .pb {
+        width: 45%;
+        margin: 10px; 
+    }
+}
 
 @media (max-width:500px){
     header {
@@ -153,5 +274,22 @@ button:hover,input[type="submit"]:hover{
     .list span:active ~ .navi ul{
         visibility: visible;
     }
+    .penta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+
+    .icons {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .icons .pb {
+        
+        width: 100%;
+        margin: 10px 0;
+    }
 }
